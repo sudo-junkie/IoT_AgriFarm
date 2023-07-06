@@ -6,8 +6,8 @@
 
   (title_block
     (title "IoT_AgriFarm")
-    (date "2023-07-04")
-    (rev "1.0")
+    (date "2023-07-06")
+    (rev "2.0")
     (company "sudo-junkie")
   )
 

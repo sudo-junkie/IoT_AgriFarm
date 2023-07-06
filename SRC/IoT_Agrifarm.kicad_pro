@@ -524,6 +524,10 @@
     [
       "eae4af12-f8de-4de8-92e4-1349dbdea321",
       "RF_MODULE_LORA_RA-02"
+    ],
+    [
+      "da00ca9c-6c72-4409-bb2e-24b1e355fdb9",
+      "REGULATOR_SWITCHING_SY7208"
     ]
   ],
   "text_variables": {}

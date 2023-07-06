@@ -6,8 +6,8 @@
 
   (title_block
     (title "IoT_AgriFarm")
-    (date "2023-07-04")
-    (rev "1.0")
+    (date "2023-07-06")
+    (rev "2.0")
     (company "sudo-junkie")
   )
 
@@ -2265,7 +2265,7 @@
   (symbol (lib_id "power:+3V3") (at 31.75 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 27a83335-8930-42b1-9768-b9d3383fcdbd)
-    (property "Reference" "#PWR0321" (at 31.75 140.97 0)
+    (property "Reference" "#PWR0319" (at 31.75 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 31.75 133.35 0)
@@ -2281,7 +2281,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/30a22e0d-ffb2-4270-820f-328f695051ca"
-          (reference "#PWR0321") (unit 1)
+          (reference "#PWR0319") (unit 1)
         )
       )
     )
@@ -2290,7 +2290,7 @@
   (symbol (lib_id "power:+3V3") (at 123.19 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2909f167-c39d-4f38-9a40-96c871e814e4)
-    (property "Reference" "#PWR0322" (at 123.19 140.97 0)
+    (property "Reference" "#PWR0320" (at 123.19 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 123.19 133.35 0)
@@ -2306,7 +2306,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/30a22e0d-ffb2-4270-820f-328f695051ca"
-          (reference "#PWR0322") (unit 1)
+          (reference "#PWR0320") (unit 1)
         )
       )
     )
@@ -2889,7 +2889,7 @@
   (symbol (lib_id "power:GND") (at 213.36 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 93f338e4-dd03-4e88-82d0-ea322d5a9b8a)
-    (property "Reference" "#PWR0319" (at 213.36 143.51 0)
+    (property "Reference" "#PWR0321" (at 213.36 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 213.36 142.24 0)
@@ -2905,7 +2905,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/30a22e0d-ffb2-4270-820f-328f695051ca"
-          (reference "#PWR0319") (unit 1)
+          (reference "#PWR0321") (unit 1)
         )
       )
     )
@@ -3142,7 +3142,7 @@
   (symbol (lib_id "power:GND") (at 241.3 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a612610b-93bf-45e6-8007-868938a4a3df)
-    (property "Reference" "#PWR0320" (at 241.3 143.51 0)
+    (property "Reference" "#PWR0322" (at 241.3 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 241.3 142.24 0)
@@ -3158,7 +3158,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/30a22e0d-ffb2-4270-820f-328f695051ca"
-          (reference "#PWR0320") (unit 1)
+          (reference "#PWR0322") (unit 1)
         )
       )
     )

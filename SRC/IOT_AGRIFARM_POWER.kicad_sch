@@ -6,8 +6,8 @@
 
   (title_block
     (title "IoT_AgriFarm")
-    (date "2023-07-04")
-    (rev "1.0")
+    (date "2023-07-06")
+    (rev "2.0")
     (company "sudo-junkie")
   )
 
@@ -1312,6 +1312,58 @@
         )
       )
     )
+    (symbol "power:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+12V" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+12V\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+12V_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+12V_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+12V" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -1684,6 +1736,10 @@
     (stroke (width 0) (type default))
     (uuid 0ced615c-0027-471b-bc04-c7b8848cb94f)
   )
+  (wire (pts (xy 176.53 66.04) (xy 175.26 66.04))
+    (stroke (width 0) (type default))
+    (uuid 0de6cada-644e-4f27-942e-fc11344a58e8)
+  )
   (wire (pts (xy 257.81 96.52) (xy 255.27 96.52))
     (stroke (width 0) (type default))
     (uuid 109c1ca2-8bdd-4b1c-b57d-afcecc8fbf24)
@@ -1868,6 +1924,10 @@
   (wire (pts (xy 250.19 99.06) (xy 252.73 99.06))
     (stroke (width 0) (type default))
     (uuid 45048d9b-5b9e-48f4-b1e7-20292f40179c)
+  )
+  (wire (pts (xy 185.42 71.12) (xy 185.42 69.85))
+    (stroke (width 0) (type default))
+    (uuid 460dfa7b-d236-4f10-81c1-1e7ec996b141)
   )
   (wire (pts (xy 266.7 105.41) (xy 266.7 106.68))
     (stroke (width 0) (type default))
@@ -2180,6 +2240,10 @@
     (stroke (width 0) (type default))
     (uuid 9f511c12-1241-42d9-8a28-dbe2059207e1)
   )
+  (wire (pts (xy 176.53 71.12) (xy 176.53 66.04))
+    (stroke (width 0) (type default))
+    (uuid 9f65c3e8-50a7-4e2e-a214-2c6547f51e9b)
+  )
   (polyline (pts (xy 88.9 133.35) (xy 25.4 133.35))
     (stroke (width 0) (type default))
     (uuid a09ac466-0a00-4fc1-b78d-a06adc6065aa)
@@ -2267,7 +2331,7 @@
     (stroke (width 0) (type default))
     (uuid b6ea5004-79c9-4548-8926-99eeb2d2cadc)
   )
-  (wire (pts (xy 175.26 66.04) (xy 177.8 66.04))
+  (wire (pts (xy 176.53 71.12) (xy 185.42 71.12))
     (stroke (width 0) (type default))
     (uuid b82da2b7-4424-4b52-888a-de8a4b59deb0)
   )
@@ -2600,7 +2664,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 4bcdaa81-f186-4039-8cce-299043fee23b)
   )
-  (label "VSYS" (at 177.8 66.04 0) (fields_autoplaced)
+  (label "VSYS" (at 177.8 71.12 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4ccac79b-6535-4c12-ba3d-1c7d8d78a183)
   )
@@ -2783,7 +2847,7 @@
   (symbol (lib_id "power:GND") (at 74.93 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 09f7c570-ad45-40a8-bff9-3ab5eafd012c)
-    (property "Reference" "#PWR0214" (at 74.93 102.87 0)
+    (property "Reference" "#PWR0215" (at 74.93 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 74.93 101.6 0)
@@ -2799,7 +2863,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0214") (unit 1)
+          (reference "#PWR0215") (unit 1)
         )
       )
     )
@@ -2895,7 +2959,7 @@
       )
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0216") (unit 1)
+          (reference "#PWR0217") (unit 1)
         )
       )
     )
@@ -3062,7 +3126,7 @@
   (symbol (lib_id "power:GND") (at 62.23 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2cde2465-6695-437f-9b70-68e7aad4d770)
-    (property "Reference" "#PWR0213" (at 62.23 102.87 0)
+    (property "Reference" "#PWR0214" (at 62.23 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 62.23 101.6 0)
@@ -3078,7 +3142,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0213") (unit 1)
+          (reference "#PWR0214") (unit 1)
         )
       )
     )
@@ -3137,7 +3201,7 @@
   (symbol (lib_id "power:GND") (at 182.88 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 30d306e3-6a81-4562-af22-413ed531170e)
-    (property "Reference" "#PWR0215" (at 182.88 119.38 0)
+    (property "Reference" "#PWR0216" (at 182.88 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 186.69 114.3 0)
@@ -3153,7 +3217,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0215") (unit 1)
+          (reference "#PWR0216") (unit 1)
         )
       )
     )
@@ -3249,7 +3313,7 @@
   (symbol (lib_id "power:+5V") (at 252.73 146.05 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3e331a47-fcf2-4581-9279-a2c051a246c0)
-    (property "Reference" "#PWR0221" (at 252.73 149.86 0)
+    (property "Reference" "#PWR0222" (at 252.73 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 252.73 142.24 0)
@@ -3265,7 +3329,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0221") (unit 1)
+          (reference "#PWR0222") (unit 1)
         )
       )
     )
@@ -3622,7 +3686,7 @@
           (reference "R103") (unit 1)
         )
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "R215") (unit 1)
+          (reference "R211") (unit 1)
         )
       )
       (project "Atego_Nano"
@@ -3809,7 +3873,7 @@
   (symbol (lib_id "power:GND") (at 177.8 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5e1bc6d1-447d-4404-ac47-ffd9f1a9ffd1)
-    (property "Reference" "#PWR0218" (at 177.8 133.35 0)
+    (property "Reference" "#PWR0221" (at 177.8 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.8 132.08 0)
@@ -3825,7 +3889,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0218") (unit 1)
+          (reference "#PWR0221") (unit 1)
         )
       )
     )
@@ -3834,10 +3898,10 @@
   (symbol (lib_id "Device:R") (at 128.27 162.56 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5e6fc65c-b1e4-4e6c-b1cb-7bd543b3dd01)
-    (property "Reference" "R212" (at 125.73 161.925 0)
+    (property "Reference" "R213" (at 125.73 161.925 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "R_Small" (at 125.73 164.465 0)
+    (property "Value" "100K" (at 125.73 164.465 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 126.492 162.56 90)
@@ -3849,12 +3913,24 @@
     (property "VENDOR" "LCSC" (at 128.27 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "JLCPCB PART#" "C60491" (at 128.27 162.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MANUFACTURER" "YAGEO" (at 128.27 162.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN" "RC0402FR-07100KL" (at 128.27 162.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "UNIT PRICE" "0.0006" (at 128.27 162.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 301eb1a3-5775-4b8a-b82d-2d4164f2dd9a))
     (pin "2" (uuid d8342114-6e5d-4143-a6f0-c731cbf8b828))
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "R212") (unit 1)
+          (reference "R213") (unit 1)
         )
       )
     )
@@ -3929,7 +4005,7 @@
   (symbol (lib_id "power:GND") (at 142.24 179.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6144e1ee-0b53-4798-993b-1f3c3d2f2346)
-    (property "Reference" "#PWR0228" (at 142.24 185.42 0)
+    (property "Reference" "#PWR0229" (at 142.24 185.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 142.24 184.15 0)
@@ -3945,7 +4021,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0228") (unit 1)
+          (reference "#PWR0229") (unit 1)
         )
       )
     )
@@ -3971,6 +4047,31 @@
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
           (reference "#PWR0204") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+12V") (at 185.42 69.85 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 6687fff8-8142-41bc-9916-513411b63ced)
+    (property "Reference" "#PWR0211" (at 185.42 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12V" (at 185.42 66.04 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 185.42 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 185.42 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c5ddd370-2565-4c39-a49b-1df75b5e995d))
+    (instances
+      (project "IoT_Agrifarm"
+        (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
+          (reference "#PWR0211") (unit 1)
         )
       )
     )
@@ -4061,7 +4162,7 @@
   (symbol (lib_id "power:GND") (at 128.27 179.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6cf68b17-39c2-494f-bf81-472aeeda88cd)
-    (property "Reference" "#PWR0227" (at 128.27 185.42 0)
+    (property "Reference" "#PWR0228" (at 128.27 185.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 128.27 184.15 0)
@@ -4077,7 +4178,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0227") (unit 1)
+          (reference "#PWR0228") (unit 1)
         )
       )
     )
@@ -4342,7 +4443,7 @@
   (symbol (lib_id "power:GND") (at 154.94 179.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 857f23cb-2bde-485b-9a6f-c76d053d90b7)
-    (property "Reference" "#PWR0229" (at 154.94 185.42 0)
+    (property "Reference" "#PWR0230" (at 154.94 185.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 154.94 184.15 0)
@@ -4358,7 +4459,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0229") (unit 1)
+          (reference "#PWR0230") (unit 1)
         )
       )
     )
@@ -4367,7 +4468,7 @@
   (symbol (lib_id "power:GND") (at 36.83 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 92757daf-8017-429d-8f2c-4c6b26b36ab1)
-    (property "Reference" "#PWR0211" (at 36.83 102.87 0)
+    (property "Reference" "#PWR0212" (at 36.83 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 36.83 101.6 0)
@@ -4383,7 +4484,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0211") (unit 1)
+          (reference "#PWR0212") (unit 1)
         )
       )
     )
@@ -4586,7 +4687,7 @@
   (symbol (lib_id "power:GND") (at 49.53 96.52 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9ae06217-f8cf-4bb7-981f-7cd775fef0a8)
-    (property "Reference" "#PWR0212" (at 49.53 102.87 0)
+    (property "Reference" "#PWR0213" (at 49.53 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 49.53 101.6 0)
@@ -4602,7 +4703,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0212") (unit 1)
+          (reference "#PWR0213") (unit 1)
         )
       )
     )
@@ -4652,10 +4753,10 @@
   (symbol (lib_id "Device:R") (at 128.27 172.72 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9fb7ca4e-4e02-429e-8b13-cc84c1b535f3)
-    (property "Reference" "R213" (at 125.73 172.085 0)
+    (property "Reference" "R214" (at 125.73 172.085 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "R_Small" (at 125.73 174.625 0)
+    (property "Value" "25K5" (at 125.73 174.625 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 126.492 172.72 90)
@@ -4667,12 +4768,24 @@
     (property "VENDOR" "LCSC" (at 128.27 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "JLCPCB PART#" "C273695" (at 128.27 172.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MANUFACTURER" "YAGEO" (at 128.27 172.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MPN" "RC0402FR-0725K5L" (at 128.27 172.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "UNIT PRICE" "0.0007" (at 128.27 172.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid fcb29f2e-826a-4768-828c-787ba675f6f7))
     (pin "2" (uuid 62e7ca34-a747-4a04-bd3a-0fd11a01dac4))
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "R213") (unit 1)
+          (reference "R214") (unit 1)
         )
       )
     )
@@ -4864,7 +4977,7 @@
   (symbol (lib_id "power:GND") (at 152.4 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b4497d64-af80-4e5c-a327-25ab8440df90)
-    (property "Reference" "#PWR0217" (at 152.4 129.54 0)
+    (property "Reference" "#PWR0218" (at 152.4 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 152.4 128.27 0)
@@ -4880,7 +4993,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0217") (unit 1)
+          (reference "#PWR0218") (unit 1)
         )
       )
     )
@@ -5042,7 +5155,7 @@
   (symbol (lib_id "power:GND") (at 92.71 179.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bf26c2e0-f1f6-44a4-9877-28b95b0327a7)
-    (property "Reference" "#PWR0226" (at 92.71 185.42 0)
+    (property "Reference" "#PWR0227" (at 92.71 185.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 92.71 184.15 0)
@@ -5058,7 +5171,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0226") (unit 1)
+          (reference "#PWR0227") (unit 1)
         )
       )
     )
@@ -5534,7 +5647,7 @@
   (symbol (lib_id "power:GND") (at 242.57 160.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eb64787d-4160-4132-b24e-dab8f15d403d)
-    (property "Reference" "#PWR0222" (at 242.57 166.37 0)
+    (property "Reference" "#PWR0225" (at 242.57 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 242.57 163.83 0)
@@ -5550,7 +5663,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0222") (unit 1)
+          (reference "#PWR0225") (unit 1)
         )
       )
     )
@@ -5754,7 +5867,7 @@
   (symbol (lib_id "power:GND") (at 66.04 179.07 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fce83172-bf22-4cce-8d28-f00ced670870)
-    (property "Reference" "#PWR0225" (at 66.04 185.42 0)
+    (property "Reference" "#PWR0226" (at 66.04 185.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 66.04 184.15 0)
@@ -5770,7 +5883,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "#PWR0225") (unit 1)
+          (reference "#PWR0226") (unit 1)
         )
       )
     )
@@ -5779,7 +5892,7 @@
   (symbol (lib_id "Device:R_Small") (at 177.8 123.19 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fd6a75e9-1c05-4f64-84cd-b3c4ff9aa6b5)
-    (property "Reference" "R211" (at 175.26 122.555 0)
+    (property "Reference" "R212" (at 175.26 122.555 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.05K" (at 175.26 125.095 0)
@@ -5811,7 +5924,7 @@
     (instances
       (project "IoT_Agrifarm"
         (path "/e886365f-2304-4290-beeb-1e373de9e66a/6ec3cb62-2e96-46f4-bca5-aa555b9a5036"
-          (reference "R211") (unit 1)
+          (reference "R212") (unit 1)
         )
       )
     )
